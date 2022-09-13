@@ -29,7 +29,7 @@ module.exports = async bot => {
     await rest.put(Routes.applicationCommands(bot.user.id), {body: commands})
 
     setInterval(async () => {
-        const Statut_Random_AutoChange = ["3.0", "/help"][Math.floor(Math.random() * ["3.0", "/help"].length)];
+        const Statut_Random_AutoChange = ["3.0", "/help", "/cookieclicker"][Math.floor(Math.random() * ["3.0", "/help", "/cookieclicker"].length)];
         bot.user.setPresence({activities: [{name: `${Statut_Random_AutoChange}`, type: ActivityType.Watching}]})
     }, 3000);
 
