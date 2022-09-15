@@ -7,7 +7,7 @@ from threading import Timer
 import re
 
 load_dotenv()
-TOKEN = os.getenv('DISCORD_TOKEN')
+client.login(process.env.TOKEN);
 client = commands.Bot(command_prefix="!")
 
 # Contient tout les différentes parti avec comme identitfiant l'id du premier message envoyer
