@@ -4,10 +4,10 @@ const { EmbedBuilder, ActionRowBuilder, SelectMenuBuilder } = require("discord.j
 module.exports = {
 
     name: "ticket",
-    description: "🔨 Permet d'envoyer l'embed des tickets",
+    description: "👑 Permet d'envoyer l'embed des tickets",
     permission: Discord.PermissionFlagsBits.Administrator,
     dm: false,
-    category: "🔨 Modération",
+    category: "👑 Administration",
 
     async run(bot, message, args) {
         const EmbedTicket = new EmbedBuilder()
