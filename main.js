@@ -6,7 +6,7 @@ const loadCommands = require("./Loaders/loadCommands")
 const loadEvents = require("./Loaders/loadEvents")
 
 
-
+bot.login(process.env.TOKEN);
 
 
 
