@@ -13,7 +13,9 @@ module.exports = async bot => {
     bot.user.setStatus('Ready')
     setTimeout(async () => {
         const options = [
-            "En Maintenance !"
+            "3.0",
+            "/help",
+            "/cookieclicker",
         ]
         let optionsradom = Math.floor(Math.random() * options.length);
         let motRandom = options[optionsradom];
