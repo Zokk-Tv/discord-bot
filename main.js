@@ -6,7 +6,7 @@ const loadCommands = require("./Loaders/loadCommands")
 const loadEvents = require("./Loaders/loadEvents")
 
 
-bot.login(process.env.TOKEN);
+
 
 
 
@@ -16,8 +16,7 @@ bot.fonction = {
   createId: require("./Fonctions/createId")
 }
 
-
-bot.login(config.TOKEN)
+bot.login(process.env.TOKEN)
 loadCommands(bot)
 loadEvents(bot)
 
